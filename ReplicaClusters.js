@@ -49,7 +49,7 @@ const dbName = 'Torneo';
 
 
 // Funcion Async para procesos del Cluster Principal
-async function mainPrincipal(Coleccion, Opcion, DatosParaIngresar, DatosBusca, DatoActualiza, DatosParaBorrar,) {
+async function mainPrincipal(Coleccion, Opcion, DatosParaIngresar, DatosBusca, DatoActualiza, DatosParaBorrar) {
     // Meto para conectar con el cluster
     await clientPrincipal.connect();
     console.log('Conectado con Cluster Principal');
@@ -177,7 +177,7 @@ DatosParaBorrar = {}
 
 
 //Seteo de los datos en las funciones de principal y replica
-mainPrincipal(NombreColeccion, Opcion, DatosParaIngresar, DatosBusca, DatoActualiza, DatosParaBorrar,)
+mainPrincipal(NombreColeccion, Opcion, DatosParaIngresar, DatosBusca, DatoActualiza, DatosParaBorrar)
     .then(console.log)
     .catch(console.error)
     .finally(() => clientPrincipal.close());
