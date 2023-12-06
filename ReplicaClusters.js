@@ -147,13 +147,13 @@ async function mainReplica(Coleccion, Opcion, DatosParaIngresar, DatosBusca, Dat
 
 
 /*
-1 = Create opcion para crear datos
-2 = Read opcion para ver los datos todos
-3 = Read opcion para ver los datos uno
-4 = Update opcion para actualizar los datos
-5 = Delete opcion para borrar los datos
+1 = Create opcion para crear datos // Nombre coleccion y Ejemplo Ingresar = [{mama:"AS", papa:"Ol"},{mama:"AS", papa:"Ol"}] - [mama:"AS", papa:"Ol"]
+2 = Read opcion para ver los datos todos // Solo coloar la opcion y el nombre de la coleccion
+3 = Read opcion para ver los datos uno // Nombre coleccion y DatosBusca = {Marca: "Adidas"}
+4 = Update opcion para actualizar los datos // Nombre coleccion y DatoActualiza = {Marca: "Adidas"}
+5 = Delete opcion para borrar los datos // Nombre coleccion y Ejemplo Borrar = DatosParaBorrar = { Nombre: "q" }
 */
-Opcion = 1
+Opcion = 2
 
 
 //Setear la coleccion con la que se desea trabajar
